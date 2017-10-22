@@ -35,14 +35,24 @@ int Compare(double a, double b)
 		return 0;
 	
 }
+int Compare1(int a, int b)
+{
+	if (a >= b)
+		return 1;
+	return 0;
+}
+int Compare1(Xe xe1,Xe xe2)
+{
+	if (xe1.gia >= xe2.gia)
+		return 1;
+	if (xe1.gia <= xe2.gia)
+		return 0;
+}
 int Compare(Xe xe1, Xe xe2)
 {
 	if (xe1.gia > xe2.gia)
 		return 1;
-	if (xe1.gia >= xe2.gia)
-		return 2;
-	if (xe1.gia <= xe2.gia)
-		return 3;
+	
 	return 0;
 }
 void Mang(Xe xe[], int &n)
@@ -196,7 +206,7 @@ int BinarySearch(ElementType a[], int n, ElementType x)
 	while (dau<=cuoi)
 	{
 		mid = (cuoi+dau) / 2;
-		if (Compare(a[mid],x)==2&&Compare(a[mid-1],x)==3)
+		if (Compare1(a[mid],x)&&!Compare1(a[mid-1],x))
 		{
 			return mid;
 		}
@@ -333,15 +343,12 @@ void Menu()
 	}
 	cout << "\n--------------------------------------------------";
 	int i;
-	cout << "\n nhan (1) de thoat \n nhan (2) de tiep tuc";
+	cout << "\n nhan (1) de thoat \n ";
 	cin >> i;
 	switch (i)
 	{
 	case 1:
 		system("cls");
-		break;
-	case 2:
-		goto a;
 		break;
 	default:
 		break;

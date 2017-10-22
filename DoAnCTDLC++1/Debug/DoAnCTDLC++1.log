@@ -1,4 +1,5 @@
 ﻿  DoAnCTDLC1.cpp
-c:\users\admin\source\repos\doanctdlc++1\doanctdlc++1\doanctdlc1.cpp(85): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\admin\source\repos\doanctdlc++1\doanctdlc++1\doanctdlc1.cpp(95): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\admin\source\repos\doanctdlc++1\doanctdlc++1\doanctdlc1.cpp(50): warning C4715: 'Compare1': not all control paths return a value
   DoAnCTDLC++1.vcxproj -> C:\Users\ADMIN\source\repos\DoAnCTDLC++1\Debug\DoAnCTDLC++1.exe
   DoAnCTDLC++1.vcxproj -> C:\Users\ADMIN\source\repos\DoAnCTDLC++1\Debug\DoAnCTDLC++1.pdb (Partial PDB)
